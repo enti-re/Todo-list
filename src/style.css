@@ -1,12 +1,13 @@
 hmtl,body{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 
 .nav{
-    color: #dbedf3;
-    background-color: #283149;
+    color: #e8e8e8;
+    background-color: #495464;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,4 +41,103 @@ hmtl,body{
 .website-logo{
     display: flex;
     flex-direction: row;
+}
+
+.sidebar{
+    width: 200px;
+    height: 100vh;
+    background-color: #bbbfca;
+    color:#495464;
+}
+
+.quick-menu{
+    padding: 30px 0px;
+}
+
+.bar-item{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+} 
+
+.bar-item img{
+    padding-top: 15px;
+    padding-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.bar-item:hover{
+    background-color: rgba(0,0,0,.1);
+    border-radius: 10px;
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bar-item:nth-child(3){
+    font-weight: 2000;
+}
+
+.project{
+    display: grid;
+    justify-content: start;
+    padding-left: 35px;
+}
+
+.add-project img{
+    height: 15px;
+    width: 15px;
+    padding-top: 22px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.add-project img:hover{
+    transform: scale(1.2);
+}
+
+.add-project{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    margin-top: -20px;
+}
+
+.add-project-2{
+    display: grid;
+    grid-auto-flow: row;
+    padding: -15px;
+}
+
+.add-project-2 input{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.project-list{
+    line-height: 0;
+    padding: 0;
+}
+
+.project-list-item:hover{
+    background-color: rgba(0,0,0,.1);  
+    cursor: pointer; 
+}
+
+.project-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 200px;
+}
+
+
+.project-list-item img{
+    height: 10px;
+    width: 10px;
+    padding-left: 50px;
 }
